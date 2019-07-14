@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Stranger Things Hangman</title>
+  </head>
+  <body>
+    <p>
+      <embed
+        src="assets/images/stranger-things-theme-song.mp3"
+        autostart="true"
+        loop="false"
+        width="2"
+        height="2"
+      />
+    </p>
+
+    <!-----<img src="assets/images/alphabetWall.jpeg">-->
+
+    <header>
+        <div class="hang-man-view text-center col-xs-6">
+      <img
+        id="logo"
+        src="assets/images/Stranger_Things_logo.png"
+        alt="Stranger Things Logo"
+      />
+    </header>
+<br>
+    <!-- Box that contains the current word -->
+    <div class="container1">
+      <div class="word col-xs-2">
+        <h1>Current Word:
+            <div id="currentWord">
+            </div>
+        </h1>
+        <div id="hold-word">
+          <span class="text-design text-center" id="currentWord"> </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- the panel for the letter guesses and win counts -->
+    <div class="container2">
+      <div class="score-view col-xs-2">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Score</h1>
+            <h4>Press any key to begin.</h4>
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="text-design">Wins: <span id="wins">0</span></p>
+                <p class="text-design">
+                  Remaining Tries: <span id="remainingTries">15</span>
+                </p>
+                <p class="text-design">
+                  Letters Tried: <span id="triedLetters"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <script src="assets/javascript/game.js"></script>
+  </footer>
+</html>

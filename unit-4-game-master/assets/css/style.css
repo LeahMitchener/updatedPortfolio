@@ -1,0 +1,115 @@
+body {
+  background-image: url("../images/background");
+  background-size: cover;
+  margin: 0;
+  background-repeat: repeat;
+}
+
+.jumbotron {
+  font-family: helvetica;
+  color: #3f3d47;
+  font-weight: bold;
+  float: center;
+  text-align: center;
+  background: #ffc248;
+}
+
+/* h1 {
+  font-family: helvetica;
+  color: #3f3d47;
+  font-weight: bold;
+  float: center;
+  text-align: center;
+  background: #ffc248;
+  padding-top: 5px;
+  padding-bottom: 5px;
+} */
+
+h2 {
+  font-family: helvetica;
+  color: #3f3d47;
+  background: #ffc248;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  font-family: helvetica;
+  color: #ffc248;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Insturctions {
+  margin: 25%;
+  align: auto;
+}
+
+p {
+  text-align: center;
+  background: #aae4d9;
+  color: #3f3d47;
+  float: center;
+  padding: 10px;
+}
+
+.scoresAndCats {
+  text-align: center;
+  background: #aae4d9;
+  color: #3f3d47;
+  float: center;
+  border-color: #ffc248;
+  border: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10%;
+}
+
+.randomScoreBox {
+  background: #ffc248;
+  text-align: center;
+  float: left;
+  border-color: #3f3d47;
+  padding: 5px;
+  margin: 10%;
+}
+
+.catImages {
+  text-align: center;
+  background: #aae4d9;
+  color: #3f3d47;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10%;
+}
+
+/*.catOne {
+  float: left;
+  padding: 5px;
+  margin: 10%;
+}
+
+.catTwo {
+  float: left;
+  padding: 5px;
+  margin: 10%;
+}
+
+.catThree {
+  float: left;
+  padding: 5px;
+  margin: 10%;
+}
+
+.catFour {
+  float: left;
+  padding: 5px;
+  margin: 10%;
+}
+
+.catFive {
+  float: left;
+  padding: 5px;
+  margin: 10%;
+}
+*/

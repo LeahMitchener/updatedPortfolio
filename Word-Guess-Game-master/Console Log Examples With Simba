@@ -1,0 +1,152 @@
+game.js:70 Array(26)
+for (var i=0; i<=10; i++) {
+console.log(i)
+}
+VM111:2 0
+VM111:2 1
+VM111:2 2
+VM111:2 3
+VM111:2 4
+VM111:2 5
+VM111:2 6
+VM111:2 7
+VM111:2 8
+VM111:2 9
+VM111:2 10
+undefined
+for (var i=1; i<=10; i++) {
+console.log(i)
+}
+VM213:2 1
+VM213:2 2
+VM213:2 3
+VM213:2 4
+VM213:2 5
+VM213:2 6
+VM213:2 7
+VM213:2 8
+VM213:2 9
+VM213:2 10
+undefined
+for (var i=7; i<=10; i++) {
+console.log(i)
+}
+VM217:2 7
+VM217:2 8
+VM217:2 9
+VM217:2 10
+undefined
+for (var i=3; i<=6; i++) {
+console.log(i)
+}
+VM224:2 3
+VM224:2 4
+VM224:2 5
+VM224:2 6
+undefined
+for (var i=0; i<=10; i=i+2) {
+console.log(i)
+}
+VM240:2 0
+VM240:2 2
+VM240:2 4
+VM240:2 6
+VM240:2 8
+VM240:2 10
+undefined
+var animals= ['dog', 'cat', 'pigeon', 'tiger', 'pig']
+undefined
+animals
+(5) ["dog", "cat", "pigeon", "tiger", "pig"]
+animals.length
+5
+animals.push('lion')
+6
+animals
+(6) ["dog", "cat", "pigeon", "tiger", "pig", "lion"]
+animals.push('giraffe')
+7
+animals
+(7) ["dog", "cat", "pigeon", "tiger", "pig", "lion", "giraffe"]
+animals.pop
+ƒ pop() { [native code] }
+animals.pop()
+"giraffe"
+animals
+(6) ["dog", "cat", "pigeon", "tiger", "pig", "lion"]
+animals.pop()
+"lion"
+animals
+(5) ["dog", "cat", "pigeon", "tiger", "pig"]
+animals.unshift('lion')
+6
+animals
+(6) ["lion", "dog", "cat", "pigeon", "tiger", "pig"]
+animals.unshift('red lion')
+7
+animals
+(7) ["red lion", "lion", "dog", "cat", "pigeon", "tiger", "pig"]
+animals.shift()
+"red lion"
+animals
+(6) ["lion", "dog", "cat", "pigeon", "tiger", "pig"]
+animals.shift()
+"lion"
+animals
+(5) ["dog", "cat", "pigeon", "tiger", "pig"]
+animals.push('lion')
+6
+animals
+(6) ["dog", "cat", "pigeon", "tiger", "pig", "lion"]
+function randomAnimal(arr){
+return 0.5 - Math.floor(Math.random * arr.length)
+}
+undefined
+randomAnimal(animals)
+NaN
+function randomAnimal(arr){
+return 0.5 - Math.floor(Math.random() * arr.length)
+}
+undefined
+randomAnimal(animals)
+-2.5
+function randomAnimal(arr){
+return 0.5 - Math.floor(Math.random())
+}
+undefined
+randomAnimal(animals)
+0.5
+Math.floor(Math.random() * 5)
+0
+Math.floor(Math.random() * 5)
+0
+Math.floor(Math.random() * 5)
+1
+Math.floor(Math.random() * 5)
+1
+Math.floor(Math.random() * 5)
+4
+Math.floor(Math.random() * 5)
+2
+function randomAnimal(arr){
+var index= 
+Math.floor(Math.random() * 5)
+return animals[index]
+}
+undefined
+randomAnimal
+ƒ randomAnimal(arr){
+var index= 
+Math.floor(Math.random() * 5)
+return animals[index]
+}
+randomAnimal(animals)
+"pig"
+randomAnimal(animals)
+"pig"
+randomAnimal(animals)
+"tiger"
+randomAnimal(animals)
+"pig"
+randomAnimal(animals)
+"cat"

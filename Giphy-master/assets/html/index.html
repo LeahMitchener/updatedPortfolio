@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway|Slabo+27px"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>The Giphy Master</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- jumbotron -->
+
+    <div id="jumbotron" class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">The 1990's Giphy Master</h1>
+        <p class="lead">
+          Click the suggestions or submit your own for tons of giphy silliness!
+        </p>
+      </div>
+    </div>
+
+    <!-- buttons card -->
+
+    <div class="card" style="width: 30%;">
+      <div class="card-body">
+        <h5 class="card-title">1990's Giphy Fun</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+          Create new Giphy buttons here!
+        </h6>
+        <!-- <p class="card-text">
+          Enter a keyword to create a new Giphy button and have all the Giphy
+          fun!
+        </p> -->
+
+        <div class="search-container">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search Keyword"
+              aria-label="Search Keyword"
+              aria-describedby="basic-addon2"
+            />
+            <!-- <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">Search</span>
+          </div> -->
+          </div>
+
+          <div class="container-fluid">
+            <button id="submit-button" type="button" class="btn btn-secondary">
+              Submit
+            </button>
+          </div>
+        </div>
+
+          <br />
+
+          <div class="buttons">
+            <button class="btn" topics="kurt cobain">
+              Kurt Cobain
+            </button>
+
+            <button class="btn" topics="mario kart">
+              Mario Kart
+            </button>
+
+            <button class="btn" topics="designing women">
+              Designing Women
+            </button>
+
+            <button class="btn" topics="boy meets world">
+              Boy Meets World
+            </button>
+
+            <button class="btn" topics="frasier">
+              Frasier
+            </button>
+
+            <button class="btn" topics="tommy pickles">
+              Tommy Pickles
+            </button>
+
+            <button class="btn" topics="pizza">
+              Pizza
+            </button>
+
+            <button class="btn" topics="law & order">
+              Law & Order
+            </button>
+
+            <button class="btn" topics="toy story">
+              Toy Story
+            </button>
+
+            <button class="btn" topics="friends">
+              Friends
+            </button>
+
+            <button class="btn" topics="michael jordan">
+              Michael Jordan
+            </button>
+
+            <button class="btn" topics="rockos modern life">
+              Rocko's Modern Life
+            </button>
+
+            <button class="btn" topics="angry beavers">
+              Angry Beavers
+            </button>
+
+            <button class="btn" topics="waynes world">
+              Wayne's World
+            </button>
+
+            <button class="btn" topics="spice girls">
+              Spice Girls
+            </button>
+
+            <button class="btn" topics="pulp fiction">
+              Pulp Fiction
+            </button>
+
+            <button class="btn" topics="butterfly clips">
+              Butterfly Clips
+            </button>
+
+            <button class="btn" topics="fresh prince">
+              Fresh Prince
+            </button>
+
+            <button class="btn" topics="3rd rock from the sun">
+              3rd Rock From The Sun
+            </button>
+
+            <button class="btn" topics="ninja turtles">
+              Ninja Turtles
+            </button>
+          </div>
+
+          <!-- <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a> -->
+        </div>
+      </div>
+
+      <!-- submit button -->
+
+      <!-- <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search Keyword"
+        aria-label="Search Keyword"
+        aria-describedby="basic-addon2"
+      />
+      <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2">Search</span>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <button id="submit-button" type="button" class="btn btn-secondary">
+        Submit
+      </button> -->
+
+      <!-- query stuff -->
+
+      <!--  
+      <div id="images"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        //Grabs a new gif when submit is pushed
+        $("#submit-button").on("click", function() {
+          //Connects the API URL and key
+          var queryURL =
+            "https://api.giphy.com/v1/gifs/search?api_key=66wbvYjm2iQHjK8EGsW6aLelLl0jNEqG&limit=10";
+
+          //AJAX call to giphy API
+          $.ajax({
+            url: queryURL,
+            method: "GET"
+          })
+
+            //Happens when we get the response back
+            .then(function(response) {
+              //Sets a variable with image url from response
+              var imageUrl = response.data.image_original_url;
+
+              //Creating am image tag
+              var randomImage = $("<img>");
+
+              //Sets sourc/src attribute to the image url
+              //Also sets alt text for mouse over
+              randomImage.attr("src", imageUrl);
+              randomImage.attr("alt", "images");
+
+              //Puts newest gif at the front of the list. Attaches image to DOM.
+              $("#images").prepend(randomImage);
+            });
+        });
+      </script>
+    --></div>
+  </body>
+</html>

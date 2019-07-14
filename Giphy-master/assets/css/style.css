@@ -1,0 +1,80 @@
+.jumbotron {
+  font-family: "Slabo 27px", serif;
+  color: white;
+  font-weight: bold;
+  float: center;
+  text-align: center;
+  background: hotpink;
+}
+
+.lead {
+  font-family: "Raleway", sans-serif;
+  font-size: 16pt;
+}
+
+.buttons {
+  font-family: "Raleway", sans-serif;
+  color: hotpink;
+  margin: auto;
+  float: auto;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: white;
+  border-radius: 10px;
+  border: 2px;
+  border-color: hotpink;
+  border-style: solid;
+}
+
+.btn.sharp {
+  border-radius: 10px;
+}
+
+body {
+  background-image: url("../graphics/50 copy.png");
+}
+
+.card {
+  border: 12px;
+  border-color: black;
+  background-color: hotpink;
+  float: right;
+  padding: 10px;
+  margin: 20pt;
+  border-radius: 10px;
+}
+
+.search-container {
+  span: 80%;
+  float: center;
+}
+
+.card-title {
+  font-family: "Slabo 27px", serif;
+  font-size: 24pt;
+  font-display: bold;
+  color: white;
+  text-align: center;
+}
+
+.card-subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 12pt;
+  text-align: center;
+  color: white;
+}
+
+.card-body {
+  float: center;
+  text-align: center;
+}
+
+.input-group {
+  float: left;
+}
+
+/* #submit-button {
+  float: left;
+} */

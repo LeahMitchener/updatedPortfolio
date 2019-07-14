@@ -1,0 +1,21 @@
+body {
+  background-image: url("toy_train_background_colored_flat_repeating_design_6830403.jpg");
+  /* background-size: cover; */
+  background-repeat: repeat;
+}
+
+.jumbotron {
+  background: #78cdd2;
+  text-align: center;
+  color: #f9d330;
+  /* border-bottom-color: #f9d330;
+  border-bottom: 5px; */
+}
+
+.panel-primary {
+  border-color: #f9d330;
+}
+
+.panel-heading {
+  background: #f9d330;
+}
